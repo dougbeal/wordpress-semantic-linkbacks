@@ -16,9 +16,9 @@ class Linkbacks_Notifications {
 		add_filter( 'comment_notification_text', array( 'Linkbacks_Notifications', 'comment_notification_text' ), 10, 2 );
 		add_filter( 'comment_notification_subject', array( 'Linkbacks_Notifications', 'comment_notification_subject' ), 10, 2 );
 		add_filter( 'ckpn_newcomment_subject', array( 'Linkbacks_Notifications', 'comment_notification_subject' ), 10, 2 );
-		add_filter( 'ckpn_newcomment_message', array( 'LinkbackS_Notifications', 'basic_notification_text' ), 10, 2 );
+		add_filter( 'ckpn_newcomment_message', array( 'Linkbacks_Notifications', 'basic_notification_text' ), 10, 2 );
 		add_filter( 'fnpn_newcomment_subject', array( 'Linkbacks_Notifications', 'comment_notification_subject' ), 10, 2 );
-		add_filter( 'fnpn_newcomment_message', array( 'LinkbackS_Notifications', 'basic_notification_text' ), 10, 2 );
+		add_filter( 'fnpn_newcomment_message', array( 'Linkbacks_Notifications', 'basic_notification_text' ), 10, 2 );
 
 		if ( WP_DEBUG ) {
 			// For testing outgoing comment email
